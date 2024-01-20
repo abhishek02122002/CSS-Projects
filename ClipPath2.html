@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background:#DCF5FF;
+        margin:0;
+        height:100vh;
+        display:grid;
+        justify-items:center;
+        align-items:center;
+        font-family:"Nunito";
+    }
+ 
+        .inner{
+            background:rgb(7,218,165);
+            padding:1em;
+            border-radius: 10px;
+            width:250px;
+            clip-path:circle(10% at 90% 20%);
+            transition:all 0.5s ease-in-out;
+            cursor:pointer;
+            &:hover{
+                clip-path:circle(75%);
+                background:#00B6FF;
+            }
+            .div{
+                float:right;
+                color:white;
+                font-weight:bold;
+                position:relative;
+                margin-right:4%;
+                margin-top:11px;
+                /* transition:color 0.5s     */
+
+            }
+            &:hover .div{
+                opacity:0;
+            }
+
+
+            h1{
+                color:white;
+            }
+            p{
+                color:white;
+                font-size:0.8rem;
+            }
+        }
+     
+</style>
+<body>
+    <div class="container">
+        <div class="inner">
+            <div class="div">i</div>
+            <h1>HEY!</h1>
+            <p>
+                This is an informative card that will tell you something thats's .... well,important.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
